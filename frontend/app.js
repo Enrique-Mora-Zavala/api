@@ -104,3 +104,12 @@ async function deletePerson(id) {
         }
     }
 }
+
+// Esta función se encarga de preparar el formulario para editar una persona,
+// llenando los campos con la información actual y cambiando el botón a "Actualizar"
+function editPersonSetup(id, name) {
+    personIdInput.value = id;
+    personNameInput.value = name;
+    submitBtn.textContent = 'Actualizar';
+    cancelBtn.style.display = 'inline-block';
+}
