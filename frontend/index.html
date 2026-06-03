@@ -1,0 +1,37 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de API JSON-Server con JavaScript</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <h2>Gestión de personas</h2>
+    
+    <!-- Formulario para crear y modificar datos de las personas -->
+    <form id="personForm">
+        <input type="hidden" id="personId">
+        <label for="personName">Nombre:</label>
+        <input type="text" id="personName" required placeholder="Nombre">
+        <button type="submit" id="submitBtn">Guardar</button>
+        <button type="button" id="cancelBtn" class="btn-cancelar">Cancelar</button>
+    </form>
+
+    <!-- Tabla de resultados -->
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nombre</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody id="peopleTableBody">
+            <!-- Los datos se cargarán aquí dinámicamente -->
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
+</html>
