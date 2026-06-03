@@ -113,3 +113,16 @@ function editPersonSetup(id, name) {
     submitBtn.textContent = 'Actualizar';
     cancelBtn.style.display = 'inline-block';
 }
+
+// Cancelar edición y limpiar formulario
+cancelBtn.addEventListener('click', resetForm);
+
+function resetForm() {
+    personIdInput.value = '';
+    personForm.reset();
+    submitBtn.textContent = 'Guardar';
+    cancelBtn.style.display = 'none';
+}
+
+// Inicializar la app cargando la lista al abrir la página
+getPeople();
