@@ -90,3 +90,17 @@ personForm.addEventListener('submit', async (e) => {
         }
     }
 });
+
+// 3. ELIMINAR (DELETE) - Borrar recurso por Id
+async function deletePerson(id) {
+    if (confirm('¿Estás seguro de eliminar este registro?')) {
+        try {
+            await fetch(`${API_URL}/${id}`, {
+                method: 'DELETE'
+            });
+            getPeople(); // Recargar tabla
+        } catch (error) {
+            console.error('Error al eliminar:', error);
+        }
+    }
+}
