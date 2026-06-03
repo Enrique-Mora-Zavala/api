@@ -1,0 +1,54 @@
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+}
+
+form { 
+    margin-bottom: 20px; 
+    padding: 15px; 
+    border: 1px solid #ccc; 
+    max-width: 200px; 
+}
+
+input { 
+    display: block; 
+    margin-bottom: 10px; 
+    width: 100%; 
+    padding: 8px;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+}
+
+table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    max-width: 500px; 
+}
+
+th, td { 
+    border: 1px solid #ddd; 
+    padding: 8px; 
+    text-align: center; 
+}
+
+th { 
+    background-color: #5C5CFF;
+    color: #ddd;
+}
+
+button { 
+    display: flex;
+    padding: 6px 10px;
+    border-radius: 5px; 
+    margin-right: 5px; 
+    cursor: pointer; 
+}
+
+.btn-eliminar {
+    background-color: #ff4d4d; 
+    color: white;
+}
+
+.btn-cancelar {
+    display: none;
+}
